@@ -1,7 +1,8 @@
 # CampusConnect
 
 CampusConnect is a Django web application with custom user accounts, signup and
-login pages, and a role-aware dashboard.
+login pages, and a role-aware dashboard. Its pages use Bootstrap 5 from the
+jsDelivr CDN.
 
 ## Requirements
 
@@ -37,11 +38,14 @@ python manage.py createsuperuser
 | `/accounts/signup/` | Create an account |
 | `/accounts/login/` | Log in |
 | `/accounts/logout/` | Log out |
+| `/accounts/profile/` | Edit your profile (login required) |
 | `/admin/` | Django admin site |
 | `/admin-panel/` | Admin-only dashboard panel |
 
 The custom user model includes a role (student, instructor, or administrator)
-and an optional course.
+and an optional course. After signup, a success message appears on the login
+page. Signed-in users can update their name, email, and course from their profile;
+their account role is not editable there.
 
 ## Tests
 

@@ -3,10 +3,14 @@
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
-  <h2>Create your account</h2>
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Sign Up</button>
-  </form>
+  <div class="card mx-auto" style="max-width: 40rem;">
+    <div class="card-body">
+      <h1 class="h3 card-title">Create your account</h1>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-primary" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
 {% endblock %}

@@ -1,3 +1,5 @@
+# Homer Gino C. Segismar     CSIT327 — G1
+
 # CampusConnect
 
 CampusConnect is a Django web application with custom user accounts, signup and

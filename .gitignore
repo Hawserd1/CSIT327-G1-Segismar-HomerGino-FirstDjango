@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+secrets/
+.secrets/
+*.secret
+*.secrets
+*.pem
+*.key

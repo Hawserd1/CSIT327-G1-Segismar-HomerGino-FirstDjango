@@ -17,7 +17,8 @@ Open PowerShell in the project directory and run:
 
 ```powershell
 py -m venv .venv
-.\.venv\Scripts\activate
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.\.venv\Scripts\Activate.ps1
 python -m pip install Django==6.1.2
 python manage.py migrate
 python manage.py runserver
